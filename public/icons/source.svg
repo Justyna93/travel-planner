@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Solid background = theme_color from manifest.json. Used by Apple touch icon
+       and maskable variant so the design works under any iOS wallpaper or mask. -->
+  <rect width="512" height="512" rx="96" fill="#2563eb"/>
+
+  <!-- Clipboard. All foreground is white. Sized + centered inside the maskable
+       safe zone (icon content stays within a ~80% inner circle). -->
+  <g transform="translate(112 96)" fill="none" stroke="#ffffff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Clipboard body -->
+    <rect x="0" y="32" width="240" height="288" rx="20" fill="#ffffff"/>
+    <!-- Binder clip head -->
+    <rect x="76" y="0" width="88" height="56" rx="14" fill="#2563eb"/>
+    <!-- Tiny tab inside the clip for depth -->
+    <rect x="100" y="14" width="40" height="14" rx="6" fill="#ffffff"/>
+  </g>
+
+  <!-- Checklist rows (drawn in blue against the white clipboard). -->
+  <g transform="translate(112 96)" fill="none" stroke="#2563eb" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Row 1: checked -->
+    <rect x="32" y="92" width="32" height="32" rx="6"/>
+    <polyline points="38,108 50,120 70,96" stroke-width="11"/>
+    <line x1="82" y1="108" x2="200" y2="108"/>
+
+    <!-- Row 2: checked -->
+    <rect x="32" y="146" width="32" height="32" rx="6"/>
+    <polyline points="38,162 50,174 70,150" stroke-width="11"/>
+    <line x1="82" y1="162" x2="200" y2="162"/>
+
+    <!-- Row 3: empty -->
+    <rect x="32" y="200" width="32" height="32" rx="6"/>
+    <line x1="82" y1="216" x2="200" y2="216"/>
+
+    <!-- Row 4: empty -->
+    <rect x="32" y="254" width="32" height="32" rx="6"/>
+    <line x1="82" y1="270" x2="200" y2="270"/>
+  </g>
+
+  <!-- Paper airplane, bottom-right, overlapping the clipboard corner.
+       Two triangles + a centerline fold. -->
+  <g transform="translate(248 248)" fill="#ffffff" stroke="#2563eb" stroke-width="10" stroke-linejoin="round" stroke-linecap="round">
+    <!-- Outer triangle (the plane silhouette) -->
+    <path d="M 8 92 L 168 8 L 132 168 L 86 116 Z"/>
+    <!-- Inner fold line giving the airplane depth -->
+    <path d="M 8 92 L 86 116 L 168 8" fill="none"/>
+  </g>
+</svg>
